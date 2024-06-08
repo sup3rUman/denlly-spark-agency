@@ -1,0 +1,82 @@
+.header {
+    background: #a4a3a8; /* Matching the header background color */
+    color: #ffffff; /* White text color */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #6c5fe9
+  }
+  
+  .navigation {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .navigation a {
+    color: #ffffff; /* White text color */
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navigation a svg {
+    margin-right: 0.5rem;
+  }
+  
+  .navigation a:hover {
+    color: #6c5fe9;
+    transform: scale(1.1);
+  }
+  
+  .navigation a:active {
+    transform: scale(0.9);
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .navigation {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .navigation a {
+      font-size: 0.9rem;
+    }
+  
+    .header h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navigation {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .navigation a {
+      font-size: 0.8rem;
+    }
+  
+    .header h1 {
+      font-size: 1.2rem;
+    }
+  }
+  
