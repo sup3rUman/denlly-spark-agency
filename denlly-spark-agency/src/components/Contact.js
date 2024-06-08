@@ -12,7 +12,7 @@ function Contact() {
         </p>
       </section>
       <div className={styles.whatsappFloatingIcon}>
-        <a href="https://wa.me/0729994794" target="_blank" rel="noopener noreferrer"></a>
+        <a href="https://wa.me/c/254729994794" target="_blank" rel="noopener noreferrer"></a>
       </div>
     </>
   );
