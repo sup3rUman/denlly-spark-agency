@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFDE95; /* Light yellow background */
+    background-color: whitesmoke; /* Light yellow background */
+  
   }
   
   nav a {
@@ -64,4 +65,3 @@ body {
   #services ul li:nth-child(odd) {
     background: #FFDE95; 
   }
-  
