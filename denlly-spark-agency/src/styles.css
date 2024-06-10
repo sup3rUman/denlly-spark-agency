@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: whitesmoke; /* Light yellow background */
@@ -44,24 +44,3 @@ body {
     color: #030202;
   }
   
-  #services ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  #services ul li {
- 
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-  }
-  
-  #services ul li svg {
-    margin-right: 0.5rem;
-  }
-  
-  #services ul li:nth-child(odd) {
-    background: #FFDE95; 
-  }

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import SwiperCore from 'swiper';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -28,7 +28,7 @@ function Home() {
         navigation
         autoplay={{ delay: 4000 }}
         speed={900}
-        style={{ width: '100%', height: '600px' }} // Adjust the height as needed
+        style={{ width: '100%', height: '100vh' }} // Adjust the height as needed
       >
         <SwiperSlide>
           <div className="swiper-slide-content" style={{ backgroundImage: `url(${bannerImage1})` }}>
