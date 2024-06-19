@@ -4,12 +4,12 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 
-import './Home.css';
+import '../CSS/Home.css';
 
 // Import images for the slides
-import bannerImage1 from '../assets/banner1.jpg';
-import bannerImage2 from '../assets/banner2.jpg';
-import bannerImage3 from '../assets/banner3.jpg';
+import bannerImage1 from '../../assets/banner1.jpg';
+import bannerImage2 from '../../assets/banner2.jpg';
+import bannerImage3 from '../../assets/banner3.jpg';
 
 // Install Swiper modules
 SwiperCore.use([Navigation, Pagination, Autoplay]);

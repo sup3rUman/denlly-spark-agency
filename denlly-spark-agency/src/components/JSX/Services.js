@@ -1,10 +1,10 @@
 import React from 'react';
-import './Service.css';
+import '../CSS/Service.css';
 
 // Import images for the service cards
-import cleaningImage from '../assets/cleaning.jpg';
-import beautyImage from '../assets/beauty.jpg';
-import insuranceImage from '../assets/insurance.jpg';
+import cleaningImage from '../../assets/cleaning.jpg';
+import beautyImage from '../../assets/beauty.jpg';
+import insuranceImage from '../../assets/insurance.jpg';
 
 function Service() {
   return (
