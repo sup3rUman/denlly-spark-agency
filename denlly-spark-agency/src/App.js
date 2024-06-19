@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from './components/Header';
-import Home from './components/Home';
-import Services from './components/Services';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Header from './components/JSX/Header';
+import Home from './components/JSX/Home';
+import Services from './components/JSX/Services';
+import Contact from './components/JSX/Contact';
+import Footer from './components/JSX/Footer';
 import './styles.css';
 
 function App() {
