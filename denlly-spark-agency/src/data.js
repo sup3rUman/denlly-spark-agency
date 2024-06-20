@@ -11,7 +11,7 @@ import insuranceImage from './assets/insurance.jpg';
 export const HeroData = [
     {
         title: 'Welcome to Denlly Beauty.',
-        desc: 'Premier beauty treatments for a radiant you.',
+        desc: 'Making you beautiful is what drives us.',
         href: '/services',
         image: beautyImage,
         buttonText: 'Discover More',
@@ -25,7 +25,7 @@ export const HeroData = [
     },
     {
         title: 'Sparkling Clean with Denlly Spark',
-        desc: 'Transform your space with our expert home and office cleaning services.',
+        desc: 'professional cleaning services for home and offices.',
         href: '/contact',
         image: cleaningImage,
         buttonText: 'Get a Quote',
