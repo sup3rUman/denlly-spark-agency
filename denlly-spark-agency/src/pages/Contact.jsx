@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../CSS/Contact.module.css';
+import styles from '../styles/Contact.css';
 function Contact() {
   return (
     <>
@@ -11,7 +11,7 @@ function Contact() {
         </p>
       </section>
       <div className={styles.whatsappFloatingIcon}>
-        <a href="https://wa.me/c/254729994794" target="_blank" rel="noopener noreferrer"></a>
+        <a href="https://wa.me/c/254729994794" target="_blank" rel="noopener noreferrer" aria-label="Descriptive Label"></a>
       </div>
     </>
   );
