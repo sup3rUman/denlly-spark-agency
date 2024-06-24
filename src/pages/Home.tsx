@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import HeroSection from '../components/HeroSection';
 import '../styles/Home.css';
 // import Contact from '../pages/Contact';
@@ -6,11 +5,7 @@ import '../styles/Home.css';
 
 
 
-function Home() {
-  useEffect(() => {
-    // Initialize Swiper if needed
-  }, []);
-
+const Home = () => {
   return (
     <main>
      <HeroSection />
