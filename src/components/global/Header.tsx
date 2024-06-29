@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <React.Fragment>
-      <header className="relative z-40 inset-x-0 top-0 font-Poppins bg-gray-50">
+      <header className="relative z-40 inset-x-0 top-0 font-Poppin bg-background">
         <nav className="flex items-center justify-between py-4 text-sm tracking-widest font-semibold max-w-[1560px] mx-auto ">
           <div className="flex lg:flex-1">
             <Link to="/" className="-m-1.5 p-1.5">

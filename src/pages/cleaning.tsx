@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Insurance = () => {
+const Cleaning = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Insurance = () => {
   )
 }
 
-export default Insurance
+export default Cleaning
