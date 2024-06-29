@@ -74,14 +74,12 @@ const Footer = () => {
 
             <div className="mt-4">
               <h1 className="font-bold text-lg text-gray-800 mb-4">
-                Our Solutions
+                Our Services
               </h1>
               <ul className="space-y-3">
-                <li>Software Development</li>
-                <li>Web Development</li>
-                <li>Networking</li>
-                <li>Graphics Design</li>
-                <li>UI/UX Design</li>
+                <li>Beauty</li>
+                <li>Cleaning</li>
+                <li>Insurance</li>
               </ul>
             </div>
 

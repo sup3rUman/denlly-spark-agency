@@ -21,7 +21,7 @@ const Sidebar = ({isShowing}: SideBarParams) => {
             <Link
               key={link.id}
               to={link.link}
-              className="py-2 pl-4 hover:bg-slate-200 uppercase text-xs tracking-widest"
+              className="py-2 pl-4 hover:bg-slate-200 uppercase text-xs tracking-wide"
             >
               {link.name}
             </Link>
