@@ -53,6 +53,11 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      backgroundImage: {
+        beauty: "url(../src/assets/waxing.jpg)",
+        skincare: "url(../src/assets/skincare.jpg)",
+        facemask: "url(../src/assets/facemask.jpg)"
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

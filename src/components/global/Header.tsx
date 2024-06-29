@@ -6,6 +6,7 @@ import Sidebar from "./Sidebar";
 
 const Header = () => {
   const [isShowing, setIsShowing] = useState<boolean>(false);
+  const [isServiceOpen, setIsServiceOpen] = useState<boolean>(false);
   const handleClose = () => {
     setIsShowing((prev) => !prev);
   };
@@ -43,11 +44,45 @@ const Header = () => {
             )}
           </div>
 
-          <div className="hidden lg:flex lg:gap-x-8 uppercase">
+          <div className="hidden lg:flex lg:gap-x-8 capitalize">
             {NavLinks.map((link) => (
-              <Link key={link.id} to={link.link} className="">
-                {link.name}
-              </Link>
+              <div key={link.id} className="relative">
+                {link.subLinks ? (
+                  <>
+                  <div
+                  onMouseEnter={() => setIsServiceOpen(true)}
+                  onMouseLeave={() => setIsServiceOpen(false)}
+                  className="flex items-center cursor-pointer"
+                  >
+                    {link.name}
+                  </div>
+                  {isServiceOpen && (
+                  <div
+                  className="absolute mt-1 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
+                  onMouseEnter={() => setIsServiceOpen(true)}
+                  onMouseLeave={() => setIsServiceOpen(false)}
+                  >
+                    <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                      {link.subLinks.map((subLink, index) => (
+                        <Link
+                          key={index}
+                          to={subLink.link}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                          role="menuitem"
+                        >
+                          {subLink.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                  )}
+                  </>
+                  ) : (
+                  <Link to={link.link}>
+                    {link.name}
+                  </Link>
+                )}
+              </div>
             ))}
           </div>
         </nav>
