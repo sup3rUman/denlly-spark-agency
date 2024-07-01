@@ -54,9 +54,14 @@ module.exports = {
         },
       },
       backgroundImage: {
-        beauty: "url(../src/assets/waxing.jpg)",
-        skincare: "url(../src/assets/skincare.jpg)",
-        facemask: "url(../src/assets/facemask.jpg)"
+        beauty: "url(../src/assets/jpgs/waxing.jpg)",
+        skincare: "url(../src/assets/jpgs/skincare.jpg)",
+        facemask: "url(../src/assets/jpgs/facemask.jpg)",
+        cleaninghero: "url(../src/assets/pngs/service-cleaning.png)",
+      },
+      fontFamily: {
+        OceanlyOceanly: ["OceanlyOceanly", "sans-serif"],
+        Melodrama: ["Melodrama", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,4 +85,7 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
+  safelist: [
+    "star-bullet"
+  ]
 }

@@ -1,11 +1,7 @@
-// Import images for the slides
-// import bannerImage1 from './assets/banner1.jpg';
-// import bannerImage2 from './assets/banner2.jpg';
-// import bannerImage3 from './assets/banner3.jpg';
-
-import cleaningImage from './assets/cleaning.jpg';
-import beautyImage from './assets/beauty.jpg';
-import insuranceImage from './assets/insurance.jpg';
+import cleaningImage from './assets/jpgs/cleaning.jpg';
+import beautyImage from './assets/jpgs/beauty.jpg';
+import insuranceImage from './assets/jpgs/insurance.jpg';
+import { AdditionalArea, Bathrooms, Bedroom, DiningRoom, Kitchen, LivingRoom } from './assets';
 
 
 export const HeroData = [
@@ -63,4 +59,82 @@ export const NavLinks = [
         name: "Team",
         link: "/team"
     },
+]
+
+export const SpacesInfo = [
+   { 
+    id: 1,
+    space: "Living room",
+    img: LivingRoom,
+    services: [
+        {list: "Dust ceiling fans, and light fixtures."},
+        {list: "Clean and sanitize baseboards."},
+        {list: "Clean and shine mirrors."},
+        {list: "Cleaning behind heavy furniture."},
+        {list: "Clean interior windows and windowsills."},
+        {list: "Fluff and arrange cushions and pillows."},
+    ]
+   },
+   { 
+    id: 2,
+    space: "Bedrooms",
+    img: Bedroom,
+    services: [
+        {list: "Dusting and wiping all surfaces"},
+        {list: "Vacuuming carpets and rugs"},
+        {list: "Sweeping and mopping hard floors"},
+        {list: "Cleaning and dusting light fixtures"},
+        {list: "Cleaning windows, window sills, and window tracks"},
+        {list: "General tidying and organizing"},
+    ]
+   },
+   { 
+    id: 3,
+    space: "Bathrooms",
+    img: Bathrooms,
+    services: [
+        {list: "Sweep and mop bathroom floors."},
+        {list: "Dust and clean light fixtures."},
+        {list: "Empty and sanitize trash bins."},
+        {list: "Clean and organize the vanity area."},
+        {list: "Replace liners in trash bins."},
+        {list: "Use mold-resistant products for lasting protection."},
+    ]
+   },
+   { 
+    id: 4,
+    space: "Kitchen",
+    img: Kitchen,
+    services: [
+        {list: "Clean the inside of the microwave."},
+        {list: "Spot clean handles and touchpoints."},
+        {list: "Arrange kitchen items neatly."},
+        {list: "Cleaning the interior of the refrigerator and freezer."},
+        {list: "Mop and disinfect hard floors."},
+    ]
+   },
+   { 
+    id: 5,
+    space: "Dining room",
+    img: DiningRoom,
+    services: [
+        {list: "Vacuum all carpeted areas"},
+        {list: "Deep cleaning of rugs and carpets."},
+        {list: "Polishing of silverware and fine china."},
+        {list: "Natural deodorizers to keep the dining room smelling fresh."},
+        {list: "Detailed cleaning of decorative items."},
+    ]
+   },
+   { 
+    id: 6,
+    space: "Additional areas",
+    img: AdditionalArea,
+    services: [
+        {list: "Wipe down and polish furniture surfaces."},
+        {list: "Vacuum all carpeted areas."},
+        {list: "Wipe down and polish any cabinets."},
+        {list: "Dust and clean window blinds or shades."},
+        {list: "Neatly arrange decorative items and personal belongings."},
+    ]
+   }
 ]

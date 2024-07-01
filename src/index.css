@@ -74,3 +74,27 @@
       @apply bg-background text-foreground;
     }
   }
+
+  @font-face {
+    font-family: "OceanlyOceanly";
+    src: url("./assets/fonts/oceanly-oceanly-svg-400.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+@font-face {
+  font-family: "Melodrama";
+  src: url("./assets/fonts/Melodrama-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+  .star-bullet {
+    @apply relative pl-6;
+  }
+
+  .star-bullet::before {
+    content: "";
+    @apply absolute left-0 top-1 w-4 h-4 md:w-5 md:h-5 bg-no-repeat bg-center bg-contain;
+    background-image: url("./assets/svgs/list-icon.svg");
+  }

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { HiMenuAlt3, HiOutlineX } from "react-icons/hi";
 import { NavLinks } from "../../data";
 import Sidebar from "./Sidebar";
+import { ChevronDown } from "lucide-react";
 
 const Header = () => {
   const [isShowing, setIsShowing] = useState<boolean>(false);
@@ -11,14 +12,28 @@ const Header = () => {
     setIsShowing((prev) => !prev);
   };
 
+  const location = useLocation();
+  
+  const getFontClass = () => {
+    if (location.pathname.includes("services/beauty")) {
+      return "font-Melodrama";
+    } else if (location.pathname.includes("services/cleaning")) {
+      return "font-OceanlyOceanly";
+    } else if (location.pathname.includes("services/insurance")) {
+      return "font-sans";
+    } else {
+      return "";
+    }
+  };
+
   return (
     <React.Fragment>
-      <header className="relative z-40 inset-x-0 top-0 font-Poppin bg-background">
-        <nav className="flex items-center justify-between py-4 text-sm tracking-widest font-semibold max-w-[1560px] mx-auto ">
+      <header className="sticky z-40 inset-x-0 top-0 font-Poppin bg-background">
+        <nav className="flex items-center justify-between py-4 text-sm tracking-widest font-semibold max-w-[1560px] mx-4 xl:mx-auto ">
           <div className="flex lg:flex-1">
             <Link to="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Denlly Group</span>
-              <h1 className="text-xl lg:text-2xl font-bold text-black uppercase">
+              <h1 className={`text-xl lg:text-2xl font-bold uppercase ${getFontClass()}`}>
                 Denlly Group
               </h1>
             </Link>
@@ -55,6 +70,7 @@ const Header = () => {
                   className="flex items-center cursor-pointer"
                   >
                     {link.name}
+                    <span>{<ChevronDown size={14}/>}</span>
                   </div>
                   {isServiceOpen && (
                   <div
@@ -87,7 +103,7 @@ const Header = () => {
           </div>
         </nav>
         {/* Mobile Menu SideBar */}
-        <Sidebar isShowing={isShowing} />
+        <Sidebar isShowing={isShowing} isServiceOpen={isServiceOpen} setIsServiceOpen={setIsServiceOpen}/>
       </header>
     </React.Fragment>
   );
