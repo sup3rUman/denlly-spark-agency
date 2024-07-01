@@ -7,26 +7,27 @@ const Beauty = () => {
         <div className="relative my-4">
           <div className="bg-cover bg-beauty relative h-56 md:h-96 flex items-center rounded-xl mx-4" />
           <div className="absolute grid inset-0 place-content-center">
-            <h1 className="font-bold text-3xl md:text-6xl text-primary-foreground font-mono">
+            <h1 className="font-bold text-3xl md:text-6xl text-primary-foreground font-Melodrama">
               Beauty
             </h1>
           </div>
         </div>
 
-        <div className="my-12 mx-4">
-          <p className="text-2xl sm:text-4xl lg:text-5xl font-semibold leading-8 lg:leading-[60px]">
+        <div className="mt-12 mb-8 mx-4">
+          <p className="text-2xl sm:text-4xl lg:text-5xl font-semibold md:leading-[60px] font-Melodrama">
             Skincare solutions that can be considered <br /> possible. Be it
             oily, normal, or dry, we have <br /> covered a range of skincare
             products for your skin.
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center gap-8 xl:gap-16 md:h-[600px] mx-4">
+        <div className="flex flex-col md:flex-row items-center gap-8 xl:gap-16 md:max-h-[600px] md:py-12 mx-4">
           <div className="border rounded-xl md:flex-1 h-80 lg:h-full w-full relative overflow-hidden">
+            {/* skincare image */}
             <div className="bg-skincare bg-cover relative flex h-full" />
           </div>
           <div className="flex-1 space-y-4">
-            <h1 className="font-semibold text-4xl">Skincare</h1>
+            <h1 className="font-semibold text-4xl font-Melodrama">Skincare</h1>
             <p>
               Skincare is vital for maintaining healthy skin throughout life. A
               consistent routine protects against environmental stressors, slows
@@ -53,7 +54,7 @@ const Beauty = () => {
                   style={{ backgroundImage: `url(${Beauty1})` }}
                 />
               </div>
-              <h1 className="text-2xl font-semibold text-center">
+              <h1 className="text-2xl font-semibold text-center font-Melodrama">
                 Consciously formulated
               </h1>
               <p className="text-center">
@@ -71,7 +72,7 @@ const Beauty = () => {
                   style={{ backgroundImage: `url(${Beauty2})` }}
                 />
               </div>
-              <h1 className="text-2xl font-semibold text-center">
+              <h1 className="text-2xl font-semibold text-center font-Melodrama">
                 Everyday essentials
               </h1>
               <p className="text-center">
@@ -89,7 +90,7 @@ const Beauty = () => {
                   style={{ backgroundImage: `url(${Beauty3})` }}
                 />
               </div>
-              <h1 className="text-2xl font-semibold text-center">
+              <h1 className="text-2xl font-semibold text-center font-Melodrama">
                 No palm & mineral oil
               </h1>
               <p className="text-center">
@@ -107,7 +108,7 @@ const Beauty = () => {
                   style={{ backgroundImage: `url(${Beauty4})` }}
                 />
               </div>
-              <h1 className="text-2xl font-semibold text-center">
+              <h1 className="text-2xl font-semibold text-center font-Melodrama">
                 Without drying alcohols
               </h1>
               <p className="text-center">
@@ -126,9 +127,9 @@ const Beauty = () => {
             <div className="bg-facemask bg-cover relative flex h-full" />
           </div>
           <div className="flex-1 space-y-4">
-            <h1 className="font-semibold text-4xl">Our values</h1>
+            <h1 className="font-semibold text-4xl font-Melodrama">Our values</h1>
             <div>
-              <h1 className="font-semibold text-xl tracking-tight">
+              <h1 className="font-semibold text-xl tracking-tight font-Melodrama">
                 01 Quality & Safety
               </h1>
               <p>
@@ -138,7 +139,7 @@ const Beauty = () => {
               </p>
             </div>
             <div>
-              <h1 className="font-semibold text-xl tracking-tight">
+              <h1 className="font-semibold text-xl tracking-tight font-Melodrama">
                 02 Transparency
               </h1>
               <p>
@@ -149,7 +150,7 @@ const Beauty = () => {
               </p>
             </div>
             <div>
-              <h1 className="font-semibold text-xl tracking-tight">
+              <h1 className="font-semibold text-xl tracking-tight font-Melodrama">
                 03 Customer-Centric Approach
               </h1>
               <p>
