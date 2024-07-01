@@ -21,7 +21,7 @@ const Beauty = () => {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center gap-8 xl:gap-16 md:max-h-[600px] md:py-12 mx-4">
+        <div className="flex flex-col md:flex-row items-center gap-8 xl:gap-16 lg:h-[600px] md:py-12 mx-4">
           <div className="border rounded-xl md:flex-1 h-80 lg:h-full w-full relative overflow-hidden">
             {/* skincare image */}
             <div className="bg-skincare bg-cover relative flex h-full" />
