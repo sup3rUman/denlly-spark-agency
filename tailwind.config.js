@@ -62,6 +62,7 @@ module.exports = {
       fontFamily: {
         OceanlyOceanly: ["OceanlyOceanly", "sans-serif"],
         Melodrama: ["Melodrama", "sans-serif"],
+        Playfair: ['"Playfair Display"', "sans-serif"]
       },
       borderRadius: {
         lg: "var(--radius)",
