@@ -13,7 +13,7 @@ import { BsArrowRightShort } from "react-icons/bs";
 const Footer = () => {
   return (
     <React.Fragment>
-      <footer className="relative isolate bottom-0 left-0 bg-slate-50 w-full p-4 font-Poppins">
+      <footer className="relative isolate bottom-0 left-0 bg-background w-full p-4 font-Poppins">
         <div className="max-w-[1560px] mx-auto ">
           {/* Upper Footer Content */}
           <div className="flex items-center justify-between border-b border-gray-300 pb-2">

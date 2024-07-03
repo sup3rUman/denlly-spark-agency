@@ -1,7 +1,7 @@
 import cleaningImage from './assets/jpgs/cleaning.jpg';
 import beautyImage from './assets/jpgs/beauty.jpg';
 import insuranceImage from './assets/jpgs/insurance.jpg';
-import { AdditionalArea, Bathrooms, Bedroom, DiningRoom, Kitchen, LivingRoom } from './assets';
+import { AdditionalArea, Bathrooms, Bedroom, DiningRoom, Hair, HeroAreaWoman, Kitchen, LivingRoom, Manicure } from './assets';
 
 
 export const HeroData = [
@@ -137,4 +137,25 @@ export const SpacesInfo = [
         {list: "Neatly arrange decorative items and personal belongings."},
     ]
    }
+]
+
+export const BeautyServices = [
+    {
+        img: Manicure,
+        title: "Nails & Manicure",
+        desc: "Treat your feet to the ultimate pampering experience as this indulgent service is designed to rejuvenate your feet, leaving them soft, smooth, and beautifully groomed.",
+        href: "/nails-and-manicure"
+    },
+    {
+        img: Hair,
+        title: "Hair & Beauty",
+        desc: "Combining skin-type-specific cleansing & toning, exfoliation, deep-pore cleansing extractions customized treatment.",
+        href: "/hair-and-beauty"
+    },
+    {
+        img: HeroAreaWoman,
+        title: "Body Treatments",
+        desc: "Offers therapeutic benefits such as relief of muscle tension and increased circulation to the areas worked.",
+        href: "/body-treatments"
+    },
 ]

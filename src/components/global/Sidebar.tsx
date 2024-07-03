@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { NavLinks } from "../../data";
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 interface SideBarParams {
   isShowing: boolean;
@@ -62,9 +63,16 @@ const Sidebar = ({
                     onMouseEnter={() => setIsServiceOpen(true)}
                     onMouseLeave={() => setIsServiceOpen(false)}
                     onClick={handleServiceClick}
-                    className="flex items-center cursor-pointer p-2 rounded text-sm text-gray-700 hover:bg-accent"
+                    className="flex items-center cursor-pointer p-2 rounded text-sm text-gray-700 hover:bg-accent justify-between"
                   >
                     {link.name}
+                    <span className="transition-transform duration-[1200ms] ease-in-out">
+                      {isServiceOpen ? (
+                      <ChevronUp size={16} />
+                      ) : (
+                        <ChevronDown size={16} />
+                      )}
+                    </span>
                   </div>
                   {isServiceOpen && (
                     <div
