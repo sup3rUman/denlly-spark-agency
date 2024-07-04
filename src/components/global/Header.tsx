@@ -55,7 +55,7 @@ const Header = () => {
                     </div>
                     {isServiceOpen && (
                       <div
-                        className="absolute mt-1 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
+                        className="absolute mt-1 w-48 rounded-md shadow-lg ring-1 bg-background ring-black ring-opacity-5"
                         onMouseEnter={() => setIsServiceOpen(true)}
                         onMouseLeave={() => setIsServiceOpen(false)}
                       >
@@ -69,7 +69,7 @@ const Header = () => {
                             <Link
                               key={index}
                               to={subLink.link}
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-secondary"
                               role="menuitem"
                             >
                               {subLink.name}
@@ -88,7 +88,7 @@ const Header = () => {
 
           {/* Reservation Button */}
           <div className="flex items-center justify-between sm:relative gap-8 w-full sm:w-fit  mt-4 sm:mt-0 sm:justify-end">
-            <div className="p-3 relative flex bg-primary">
+            <div className="p-3 relative flex bg-secondary">
               <Link to="/reservation" className="flex gap-2 items-center">
                 <LuCalendar />
                 Reservation

@@ -1,10 +1,17 @@
-import HeroNewUpdate from "./svgs/heronew.tsx"
 import ListIcon from "./svgs/list-icon.svg"
+import HeroNewUpdate from "./svgs/heronew.tsx"
+import QsSvg from "./svgs/qualityService.tsx"
+import NatureSvg from "./svgs/nature.tsx"
+import BeSvg from "./svgs/beautyExpert.tsx"
+
+
 import Beauty1 from "./pngs/beauty1.png"
 import Beauty2 from "./pngs/beauty2.png"
 import Beauty3 from "./pngs/beauty3.png"
 import Beauty4 from "./pngs/beauty4.png"
 import CleaningHero from "./pngs/service-cleaning.png"
+
+
 import LivingRoom from "./jpgs/living-room.jpg"
 import AdditionalArea from "./jpgs/additional-area.jpg"
 import Bedroom from "./jpgs/bedroom.jpg"
@@ -33,5 +40,8 @@ export {
     HeroNewUpdate,
     FauxLocs,
     Manicure,
-    Hair
+    Hair,
+    QsSvg,
+    NatureSvg,
+    BeSvg
 }
