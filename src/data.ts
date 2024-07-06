@@ -41,23 +41,18 @@ export const NavLinks = [
     },
     {
         id: '3',
-        name: "Contact",
-        link: "/contact-us"
-    },
-    {
-        id: '4',
         name: "Services",
         link: "/services",
         subLinks: [
-            {name: "Beauty", link: "/services/beauty"},
-            {name: "Cleaning", link: "/services/cleaning"},
-            {name: "Insurance", link: "/services/insurance"},
+            {name: "Beauty", link: "/services/beauty", isAvailable: true},
+            {name: "Cleaning", link: "/services/cleaning", isAvailable: false},
+            {name: "Insurance", link: "/services/insurance", isAvailable: false},
         ]
     },
     {
-        id: '5',
-        name: "Team",
-        link: "/team"
+        id: '4',
+        name: "Contact",
+        link: "/contact-us"
     },
 ]
 

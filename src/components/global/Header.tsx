@@ -25,6 +25,12 @@ const Header = () => {
     }
   };
 
+  const handleClickLink = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, isAvailable: boolean) => {
+    if (!isAvailable) {
+      e.preventDefault()
+    }
+  }
+
   return (
     <React.Fragment>
       <header className="sticky z-40 inset-x-0 top-0 font-Poppin bg-transparent backdrop-blur">
@@ -51,7 +57,13 @@ const Header = () => {
                       className="flex items-center cursor-pointer gap-2"
                     >
                       {link.name}
-                      <span className="transition 0.3s transform">{isServiceOpen ? <ChevronDown size={16} /> : <ChevronUp size={16}/>}</span>
+                      <span className="transition 0.3s transform">
+                        {isServiceOpen ? (
+                          <ChevronDown size={16} />
+                        ) : (
+                          <ChevronUp size={16} />
+                        )}
+                      </span>
                     </div>
                     {isServiceOpen && (
                       <div
@@ -69,7 +81,14 @@ const Header = () => {
                             <Link
                               key={index}
                               to={subLink.link}
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-secondary"
+                              onClick={(e) =>
+                                handleClickLink(e, subLink.isAvailable)
+                              }
+                              className={`relative block px-4 py-2 text-sm text-gray-700 hover:bg-secondary ${
+                                subLink.isAvailable
+                                  ? ""
+                                  : "pointer-events-none text-gray-400"
+                              }`}
                               role="menuitem"
                             >
                               {subLink.name}
@@ -89,7 +108,7 @@ const Header = () => {
           {/* Reservation Button */}
           <div className="flex items-center justify-between sm:relative gap-8 w-full sm:w-fit  mt-4 sm:mt-0 sm:justify-end">
             <div className="p-3 relative flex bg-secondary">
-              <Link to="/reservation" className="flex gap-2 items-center">
+              <Link to="/contact-us" className="flex gap-2 items-center">
                 <LuCalendar />
                 Reservation
               </Link>
