@@ -26,7 +26,7 @@ const Home = () => {
             </p>
             <div className="p-3 relative border transition-all duration-500 ease-in-out hover:bg-secondary">
               <Link
-                to="/reservation"
+                to="/contact-us"
                 className="flex items-center uppercase font-semibold text-xs sm:text-sm"
               >
                 Make A Reservation
@@ -85,14 +85,20 @@ const Home = () => {
         <div className="max-w-[1240px] mx-auto flex flex-col-reverse sm:flex-row px-4 gap-4 sm:gap-6 items-center">
           <div className="flex flex-1 border p-6">
             <div className="overflow-hidden shadow-2xl h-full w-full">
-              <img src={FauxLocs} alt="" className="scale-[1.3] h-full w-full"/>
+              <img
+                src={FauxLocs}
+                alt=""
+                className="scale-[1.3] h-full w-full"
+              />
             </div>
           </div>
           <div className="space-y-3 flex flex-col flex-1">
-            <h4 className="font-semibold text-primary uppercase">Take Your Care</h4>
+            <h4 className="font-semibold text-primary uppercase">
+              Take Your Care
+            </h4>
             <h1 className="font-Playfair font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl lg:leading-[60px]">
-              Elevate Your Lifestyle by Bringing Balance and Well Being Into Your
-              Life
+              Elevate Your Lifestyle by Bringing Balance and Well Being Into
+              Your Life
             </h1>
             <p>
               Designed to allow you to unwind and feel confident that you’re in
@@ -105,21 +111,42 @@ const Home = () => {
                 <div className="">
                   <BeSvg />
                 </div>
-                <h2 className="font-Playfair font-bold sm:text-lg md:leading-6 text-center text-lg">Beauty Experts</h2>
+                <h2 className="font-Playfair font-bold sm:text-lg md:leading-6 text-center text-lg">
+                  Beauty Experts
+                </h2>
               </div>
               <div className="sm:p-4 p-2 border flex flex-col items-center justify-center space-y-2 bg-purple-200/70 hover:bg-purple-300/70 transition-all duration-100 ease-linear">
                 <div className="">
                   <QsSvg />
                 </div>
-                <h2 className="font-Playfair font-bold sm:text-lg md:leading-6 text-center text-lg">Quality Services</h2>
+                <h2 className="font-Playfair font-bold sm:text-lg md:leading-6 text-center text-lg">
+                  Quality Services
+                </h2>
               </div>
               <div className="sm:p-4 p-2 border flex flex-col items-center justify-center space-y-2 bg-purple-200/70 hover:bg-purple-300/70 transition-all duration-100 ease-linear">
                 <div className="">
                   <NatureSvg />
                 </div>
-                <h2 className="font-Playfair font-bold sm:text-lg md:leading-6 text-center text-lg">100% Nature</h2>
+                <h2 className="font-Playfair font-bold sm:text-lg md:leading-6 text-center text-lg">
+                  100% Nature
+                </h2>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Forth Section */}
+      <section className="relative  mt-24 bg-purple-50 py-20">
+        <div className="mx-auto max-w-[1240px] flex flex-col">
+          <div className="border max-w-xl mx-auto text-center py-3">
+            <span className="uppercase font-semibold text-sm text-primary">Our Services</span>
+            <h1 className="font-Playfair font-bold text-2xl md:text-3xl lg:text-4xl lg:leading-10">
+              Creative excellence and the unparalleled hospitality
+            </h1>
+          </div>
+          <div>
+
           </div>
         </div>
       </section>

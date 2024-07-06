@@ -44,6 +44,15 @@ const Sidebar = ({
     }
   };
 
+    const handleClickLink = (
+      e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+      isAvailable: boolean
+    ) => {
+      if (!isAvailable) {
+        e.preventDefault();
+      }
+    };
+
   return (
     <React.Fragment>
       <div
@@ -68,7 +77,7 @@ const Sidebar = ({
                     {link.name}
                     <span className="transition-transform duration-[1200ms] ease-in-out">
                       {isServiceOpen ? (
-                      <ChevronUp size={16} />
+                        <ChevronUp size={16} />
                       ) : (
                         <ChevronDown size={16} />
                       )}
@@ -90,7 +99,14 @@ const Sidebar = ({
                           <Link
                             key={index}
                             to={subLink.link}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:bg-accent rounded-md transform ease-in-out "
+                            onClick={(e) =>
+                              handleClickLink(e, subLink.isAvailable)
+                            }
+                            className={`relative block px-4 py-2 text-sm text-gray-700 hover:bg-secondary ${
+                              subLink.isAvailable
+                                ? ""
+                                : "pointer-events-none text-gray-400"
+                            }`}
                             role="menuitem"
                           >
                             {subLink.name}
