@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="max-w-[1560px] mx-auto ">
           {/* Upper Footer Content */}
           <div className="flex items-center justify-between border-b border-gray-300 pb-2">
-            <h2 className="font-semibold text-3xl">Denlly Spark Agency</h2>
+            <h2 className="font-semibold text-3xl">Denlly Group</h2>
             <div className="flex items-center justify-center gap-2 font-semibold">
               <BiPhoneCall stroke="5" className="h-10 w-10 text-violet-500" />
               <div>
@@ -111,7 +111,7 @@ const Footer = () => {
             <h2 className="text-sm">
               &copy;Copyright {new Date().getFullYear()}{" "}
               <span className="font-bold hover:text-violet-500 transition-all duration-200 ease">
-                <a href="/"> Denlly Spark Agency</a>
+                <a href="/"> Denlly Group</a>
               </span>
             </h2>
 
