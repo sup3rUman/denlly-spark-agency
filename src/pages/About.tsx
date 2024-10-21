@@ -118,7 +118,7 @@ const About = () => {
                 />
               </div>
               <h2 className="font-Playfair font-semibold text-2xl">
-                Elias Ngugi
+              Lillian Jeptoo
               </h2>
               <span className="font-semibold uppercase text-sm text-primary">
                 Denlly Expert
@@ -148,7 +148,7 @@ const About = () => {
                 />
               </div>
               <h2 className="font-Playfair font-semibold text-2xl">
-                Gladys Makori
+                Gladys Makau
               </h2>
               <span className="font-semibold uppercase text-sm text-primary">
                 Denlly Expert

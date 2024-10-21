@@ -22,7 +22,7 @@ const Footer = () => {
               <BiPhoneCall stroke="5" className="h-10 w-10 text-violet-500" />
               <div>
                 <span className="text-sm">Call Any Time</span>
-                <p>+254 706 579 722</p>
+                <p>+254 729 994 794</p>
               </div>
             </div>
           </div>
@@ -37,7 +37,7 @@ const Footer = () => {
                   </span>
                   <h1 className="font-bold text-lg text-gray-800">Address</h1>
                 </div>
-                <p className="">River Road, Nairobi</p>
+                <p className="">PAC Ln, Roysambu</p>
                 <p className="">Kenya</p>
               </div>
               <div className="space-y">
