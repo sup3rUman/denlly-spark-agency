@@ -37,7 +37,7 @@ const Footer = () => {
                   </span>
                   <h1 className="font-bold text-lg text-gray-800">Address</h1>
                 </div>
-                <p className="">PAC Ln, Roysambu</p>
+                <p className="">PAC ln, Roysambu</p>
                 <p className="">Kenya</p>
               </div>
               <div className="space-y">
